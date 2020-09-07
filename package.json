@@ -1,0 +1,19 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kangb3/Employee-Tracker.git"
+  },
+  "author": "kangb3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kangb3/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/kangb3/Employee-Tracker#readme"
+}
