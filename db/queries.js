@@ -183,7 +183,7 @@ class DB {
     );
   }
 
-  //add employee
+  
   addEmployee(newEmpArray) {
     return this.connection.query(
       `
@@ -197,7 +197,7 @@ class DB {
   }
 
 
-  //add role
+ 
   addRole(newRoleArray) {
     return this.connection.query(
       `
@@ -211,7 +211,7 @@ class DB {
   }
 
 
-  //add department
+  
   addNewDepartment(deptName) {
     return this.connection.query(
       `
@@ -224,7 +224,7 @@ class DB {
   }
 
 
-  //update employee
+  
   updateEmployee(getName, updateEmpID) {
     console.log("checking " + getName.first_name);
     return this.connection.query(
@@ -241,7 +241,7 @@ class DB {
   }
 
 
-  //update employee role
+  
   updateEmployeeRole(roleInfoArray) {
     return this.connection.query(
       `
@@ -256,8 +256,8 @@ class DB {
   }
 
 
-   //update employee manager
-   updateEmpManager(updateEmpManagerInfo) {
+   
+   updateEmployeeManager(updateEmpManagerInfo) {
     return this.connection.query(
       `
       UPDATE
@@ -271,7 +271,7 @@ class DB {
   }
 
 
-  //remove EMP
+  
   deleteEmployee(delEmpInfo) {
     return this.connection.query(
       `
@@ -286,7 +286,7 @@ class DB {
   }
 
 
-  //remove Role
+  
   deleteRole(delRoleInfo) {
     return this.connection.query(
       `
@@ -301,7 +301,7 @@ class DB {
   }
 
 
-   //remove department
+   
    deleteDepartment(delDeptInfo) {
     return this.connection.query(
       `
