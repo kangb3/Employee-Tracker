@@ -81,6 +81,7 @@ class DB {
   }
 
 
+
   viewAllRoles() {
     return this.connection.query(
       `
@@ -94,6 +95,8 @@ class DB {
             `
     );
   }
+
+
 
   viewAllEmpByRole(roleID) {
     return this.connection.query(
@@ -125,6 +128,8 @@ class DB {
   }
 
 
+
+
   viewAllManagers() {
     return this.connection.query(
       `
@@ -142,6 +147,8 @@ class DB {
             `
     );
   }
+
+
 
 
   viewAllEmp() {
@@ -183,6 +190,8 @@ class DB {
     );
   }
 
+
+
   
   addEmployee(newEmpArray) {
     return this.connection.query(
@@ -195,6 +204,8 @@ class DB {
       newEmpArray
     );
   }
+
+
 
 
  
@@ -211,6 +222,8 @@ class DB {
   }
 
 
+
+
   
   addNewDepartment(deptName) {
     return this.connection.query(
@@ -225,6 +238,8 @@ class DB {
 
 
   
+
+
   updateEmployee(getName, updateEmpID) {
     console.log("checking " + getName.first_name);
     return this.connection.query(
@@ -239,6 +254,8 @@ class DB {
         `
     );
   }
+
+
 
 
   
@@ -257,6 +274,8 @@ class DB {
 
 
    
+
+
    updateEmployeeManager(updateEmpManagerInfo) {
     return this.connection.query(
       `
@@ -269,6 +288,8 @@ class DB {
         `
     );
   }
+
+
 
 
   
@@ -286,6 +307,8 @@ class DB {
   }
 
 
+
+
   
   deleteRole(delRoleInfo) {
     return this.connection.query(
@@ -301,6 +324,8 @@ class DB {
   }
 
 
+
+
    
    deleteDepartment(delDeptInfo) {
     return this.connection.query(
@@ -313,6 +338,8 @@ class DB {
         `
     );
   }
+
+
 
 
   viewSalaries(totalDeptBudget) {
@@ -341,6 +368,8 @@ class DB {
   }
 
 
+
+
   getManagerSchema() {
     return this.connection.query(
       `
@@ -358,6 +387,8 @@ class DB {
 
 
 
+
+
   removeManagerID(updateDBEmpRole) {
     return this.connection.query(
       `
@@ -372,5 +403,7 @@ class DB {
   }
 
 }
+
+
 
 module.exports = new DB(connection);
