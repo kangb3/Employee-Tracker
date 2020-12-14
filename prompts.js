@@ -75,4 +75,72 @@ module.exports = {
       },
     ],
 
-}
+
+    addEmployeePrompt: [
+        {
+          name: "first_name",
+          type: "input",
+          message: "what is the new employee's first name?",
+        },
+        {
+          name: "last_name",
+          type: "input",
+          message: "what is the new employee's last name?",
+        },
+      ],
+
+
+
+      addNewRole: [
+        {
+          name: "title",
+          type: "input",
+          message: "What is the name of this new title?",
+        },
+        {
+          name: "salary",
+          type: "input",
+          message: "what is the salary of this new title?",
+          validate: function (value) {
+            if (isNaN(value) === false) {
+              return true;
+            }
+            return "Please enter a number.";
+          },
+        },
+      ],
+      addNewDept: [
+        {
+          name: "name",
+          type: "input",
+          message: "What is the name of the new department?",
+        },
+      ],
+
+
+
+      updateEmployeePrompt: [
+        {
+          name: "first_name",
+          type: "input",
+          message: "what is the employee's new first name?",
+        },
+        {
+          name: "last_name",
+          type: "input",
+          message: "what is the employee's new last name?",
+        },
+      ],
+
+
+      confirmAction: [
+        {
+          name: "confirm",
+          type: "list",
+          message: "Please confirm the action.",
+          choices: ["NO", "YES"],
+        },
+      ],
+    }; 
+    
+    module.export 
