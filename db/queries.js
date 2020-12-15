@@ -165,7 +165,7 @@ class DB {
   }
 
   viewAllEmpManager(manID) {
-    //console.log(manID);
+    
     return this.connection.query(
       `
       SELECT
