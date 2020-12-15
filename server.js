@@ -267,6 +267,7 @@ var newRoleArray = {
     await db.addRole(newRoleArray);
     const allRole = await db.viewAllRoles();
     console.log(
+
       `Added new ${title.title} with salary: ${title.salary} into database`
     );
     console.table(allRole);
@@ -276,6 +277,7 @@ var newRoleArray = {
 
 
   async function addNewDepartment() {
+
     const deptName = await inquirer.prompt(prompts.addNewDept);
   
     await db.addNewDepartment(deptName);
@@ -290,6 +292,7 @@ var newRoleArray = {
 
 
   async function updateEmployee() {
+    
     const employeeList = await db.viewAllEmp();
     console.log(employeeList);
     const employeeOption = employeeList.map(({ ID, FIRST_NAME }) => ({
@@ -326,7 +329,8 @@ async function updateEmployeeRole() {
       name: FULL_NAME,
       value: ID,
     }));
-    // get all role option
+    
+    
     const roleList = await db.viewAllRoles();
     const roleOption = roleList.map(({ ID, TITLE }) => ({
       name: TITLE,
