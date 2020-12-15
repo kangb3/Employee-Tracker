@@ -1,9 +1,3 @@
-const db = require('./db');
-const inquirer = require('inquirer');
-
-
-
-
 module.exports = {
     mainPrompt: [
       {
